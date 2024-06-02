@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Spirax", sans-serif;
     background-image: url("img/cosy.jpg");
     background-color: black;
@@ -6,6 +6,7 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
 }
+
 header {
     margin-top: 0px;
     display: flex;
@@ -22,33 +23,41 @@ a {
     text-decoration: none;
 }
 
-article {
-    display: flex;
-    justify-content: center;
+relative {
     position: relative;
-    top: 6rem;
+}
+
+absolute {
+    position: absolute;
 }
 
 h1 {
     display: flex;
     justify-content: center;
+    position: relative;
     color: darkred;
     font-size: 7rem;
 }
 
-main h2 {
+h2 {
+    position: absolute;
+    top:17rem;
+    left: 35rem;
     background-color: darkred;
     opacity: 0.7;
     padding: 1rem;
     font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-family: "Poiret One", sans-serif;
-    position: absolute;
-    top: 15rem;
-    left:20rem;
-    width: 20rem;
     color: white
 }
-@media screen and (min-width: 320px) {
-    .meny{display: flex;justify-content: "center";}
 
-  }
+@media screen and (min-width: 320px) {
+    .meny {
+        display: flex;
+        flex-direction: column;
+        justify-content: "center";
+    }
+
+}
