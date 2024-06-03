@@ -23,14 +23,21 @@ a {
     text-decoration: none;
 }
 
-relative {
+.relative {
+    display:flex;
+    justify-content: center;
+    width:100%;
     position: relative;
+    top:4rem;
+
 }
 
-absolute {
-    position: absolute;
+.absolute {
+    align-self:flex-start;
 }
-
+.second {
+    align-self:center;
+}
 h1 {
     display: flex;
     justify-content: center;
@@ -41,8 +48,9 @@ h1 {
 
 h2 {
     position: absolute;
-    top:17rem;
-    left: 35rem;
+    top:13.5rem;
+    left:32rem;
+    width:30%;
     background-color: darkred;
     opacity: 0.7;
     padding: 1rem;
