@@ -102,11 +102,24 @@ section{
 p{
     margin:0;
 }
-@media screen and (min-width: 320px) {
-    .meny {
-        display: flex;
-        flex-direction: column;
-        justify-content: "center";
+@media screen and (max-width: 320px) {
+    .second {
+       position: absolute;
+       left:5px;
+       right:5px;
+    }
+    
+    .third{
+        display: none;
+    }
+    .fourth{
+        position:absolute;
+        top:20rem;
+        width:100%
+    }
+    h2{
+        width: 80%;
+        margin:0%;
     }
 
 }
