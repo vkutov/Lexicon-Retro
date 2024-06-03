@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin:0px;
-}
+
 body {
     font-family: "Spirax", sans-serif;
     background-image: url("img/cosy.jpg");
@@ -10,7 +7,12 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
 }
-
+.hot{
+    background-image: url("img/hot.jpg");
+}
+.juicy{
+    background-image: url("img/juicy.jpg");
+}
 header {
     margin-top: 0px;
     display: flex;
@@ -41,12 +43,13 @@ a {
 }
 .second {
     position: absolute;
-    top:13.7rem;
-    left:37.5rem;
+    width:100%;
+    top:14.7rem;
+    left:39rem;
 }
 .third {
     position: absolute;
-    top:18.5rem;
+    top:19.5rem;
     left:45.5rem;
 }
 .fourth {
@@ -96,7 +99,9 @@ section{
     align-items: flex-end;
     width:50%;
 }
-
+p{
+    margin:0;
+}
 @media screen and (min-width: 320px) {
     .meny {
         display: flex;
